@@ -1,0 +1,281 @@
+/* =========================
+   SECCIÓN CLASES
+========================= */
+.classes-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.classes-section h1 {
+  font-size: 2.5em;
+  color: #1b9a9a;
+  margin-bottom: 10px;
+}
+
+.classes-section p {
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.class-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.class-card {
+  background: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  /*  Forzar altura uniforme */
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.class-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.class-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.class-card h3 {
+  color: #333;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+/* =========================
+   SECCIÓN CALENDARIO
+========================= */
+.calendar-section {
+  background: linear-gradient(135deg, #fff, #e8f5e9);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.calendar-section h2 {
+  color: #00817b;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.calendar-table {
+  margin: 0 auto;
+  width: 85%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-table th {
+  background-color: #349988;
+  color: white;
+  padding: 12px;
+}
+
+.calendar-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.calendar-table tr:hover {
+  background-color: #e8f5e9;
+  transition: 0.3s;
+}
+
+/* =========================
+   SECCIÓN COMENTARIOS
+========================= */
+.comments-section {
+  background: linear-gradient(135deg, #f0f4c3, #e6ee9c);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.comments-section h2 {
+  color: #0254a0;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.comment-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comment-form textarea {
+  min-height: 140px;
+  padding: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  resize: vertical;
+  /* permite agrandar */
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.comment-form textarea:focus {
+  outline:none  ;
+  border-color: #10978c;
+  box-shadow: 0 0 0 3px rgba(16,151,140,0.25);
+}
+
+.comment-form button {
+  background-color: #10978c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #5e35b1;
+}
+
+.comment-result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #00ffcc;
+  text-shadow: 0 0 8px rgba(0, 255, 180, 0.8);
+}
+
+/* =========================
+   SECCIÓN AMIGOS
+========================= */
+.friends-section {
+
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.friends-section h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.friends-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.friend-card {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  width: 160px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(0, 255, 200, 0.2);
+}
+
+.friend-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.55);
+}
+
+.friend-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.friend-card p {
+  color: #00e0a1;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* =========================
+   SECCIÓN PROMOCIONES
+========================= */
+.promo-section {
+  background: linear-gradient(135deg, #a8a8a8, #ffffff);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.promo-section h2 {
+  color: #00796b;
+  margin-bottom: 40px;
+  font-size: 2.2em;
+}
+
+.promo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.promo-card {
+  background-color: white;
+  border-radius: 15px;
+  width: 260px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.promo-card h3 {
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.promo-card p {
+  color: #666;
+  font-size: 0.95em;
+}
+
+.promo-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #009688;
+  font-size: 1.1em;
+}
+.modal-body p {
+  color: #000;
+  font-weight: 500;
+}

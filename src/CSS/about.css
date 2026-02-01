@@ -1,0 +1,413 @@
+/*ABOUT*/
+.about {
+  padding: 80px 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8eef3 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #1b4965;
+}
+
+.about h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1b4965;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about > p {
+  font-size: 1.15em;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/*Tarjetas*/
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.about-card {
+  background: #ffffff;
+  border-radius: 18px;
+  width: 300px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.35s ease;
+  border-top: 4px solid #055d74;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #ffffff 0%, #e8f6ff 100%);
+}
+
+.about-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.about-card:hover img {
+  transform: scale(1.05);
+}
+
+.about-card h3 {
+  font-size: 1.4em;
+  color: #1b4965;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.about-card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/*Tipos de Dietas*/
+
+.about h2 {
+  font-size: 2em;
+  margin-top: 60px;
+  color: #1b4965;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.diet-list {
+  margin-top: 30px;
+  text-align: left;
+  display: inline-block;
+  background: linear-gradient(135deg, #f0f8ff, #dbeeff);
+  padding: 25px 40px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+  transition: all 0.3s ease;
+  border-top: 4px solid #055d74;
+}
+
+.diet-list:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.diet-list li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+  color: #333;
+}
+
+.diet-list b {
+  color: #1b4965;
+}
+
+/*Animación de entrada*/
+.about h1, .about > p, .about-card, .diet-list {
+  animation: fadeInUp 1s ease both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*LOGIN/REGISTRO*/
+
+.login-body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #727473 40%, #529b9b 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  border-radius: 20px;
+  flex: 1;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+.login-left {
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.login-left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.login-left span {
+  color: #27c7bf;
+}
+
+.login-left p {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.login-image {
+  width: 70%;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+
+.login-right {
+  flex: 1;
+  background-color: #e7e7e7;
+  color: #333;
+  padding: 40px;
+}
+
+.login-right h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.register-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #c381df;
+  box-shadow: 0 0 5px rgba(142, 68, 173, 0.3);
+}
+
+.btn-register {
+  width: 100%;
+  background: linear-gradient(135deg, #8ae9d9, #717776);
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-register:hover {
+  background: linear-gradient(135deg, #983cbd, #7942d3);
+}
+
+.login-text {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.login-text a {
+  color: #8e44ad;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .login-left, .login-right {
+        flex: unset;
+        width: 100%;
+    }
+
+    .login-left img {
+        width: 60%;
+    }
+}
+
+ /*  ENTRENADORES DESTACADOS*/
+
+.trainers-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: rgba(5, 15, 20, 0.65); /* FONDO MÁS OSCURO */
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,255,190,0.12);
+    margin-top: 40px;
+}
+.trainers-section  h2{
+ color: white;
+}
+.trainers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 45px;
+    margin-top: 50px;
+}
+
+/* --- Tarjeta del entrenador --- */
+.trainer-card {
+    padding: 45px 25px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0,255,200,0.25);
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 18px rgba(0,255,190,0.15);
+    transition: 0.3s ease-in-out;
+}
+
+/* HOVER */
+.trainer-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 32px rgba(0,255,200,0.55);
+}
+
+
+.trainer-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto -10px;
+    border: 3px solid rgba(0,255,200,0.75);
+    box-shadow: 0 0 18px rgba(0,255,200,0.45);
+}
+
+.trainer-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.trainer-card h3 {
+    color: #00e0a1;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(0,255,180,0.7);
+}
+
+
+.trainer-specialty {
+    color: #00b4d8;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    text-shadow: 0 0 6px rgba(0,200,255,0.6);
+}
+
+
+.trainer-desc {
+    color: #c8fff3;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+.trainer-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;
+  display: block;
+  border: 3px solid rgba(0,255,200,0.75);
+  box-shadow: 0 0 18px rgba(0,255,200,0.45);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .trainer-card {
+        padding: 40px 20px;
+    }
+    .trainer-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .trainer-card h3 {
+        font-size: 1.4rem;
+    }
+}
+.trainers-section {
+    padding: 120px 20px;
+    text-align: center;
+
+    background: linear-gradient(135deg, #042620, #0a3a32);
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+
+    box-shadow: inset 0 0 40px rgba(0,255,200,0.18);
+}
+
+/* About extra */
+.about-extra {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.about-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.about-benefits div {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: bold;
+}
